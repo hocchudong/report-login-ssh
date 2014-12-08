@@ -68,13 +68,34 @@ root@congto:~# aureport -au -i
 35. 12/08/2014 17:58:10 congtt 203.162.130.241 ssh /usr/sbin/sshd yes 89
 36. 12/08/2014 17:58:18 root ? pts/1 /bin/su yes 99
 45. 12/08/2014 20:06:05 root 218.108.49.219 ssh /usr/sbin/sshd no 198
-46. 12/08/2014 20:06:05 root 218.108.49.219 ssh /usr/sbin/sshd no 199
-47. 12/08/2014 20:06:09 root 218.108.49.219 ssh /usr/sbin/sshd no 208
-48. 12/08/2014 20:06:09 root 218.108.49.219 ssh /usr/sbin/sshd no 209
-49. 12/08/2014 20:06:13 root 218.108.49.219 ssh /usr/sbin/sshd no 218
 50. 12/08/2014 20:06:13 root 218.108.49.219 ssh /usr/sbin/sshd no 219
 51. 12/08/2014 20:06:18 root 218.108.49.219 ssh /usr/sbin/sshd no 228
 52. 12/08/2014 20:06:18 root 218.108.49.219 ssh /usr/sbin/sshd no 229
 ...
 ```
 
+##### 1.2.3. Thống kê các phiên login thành công
+- Cú pháp lệnh 
+```sh
+root@congto:~# aureport -au -i --success
+```
+
+- Kết quả
+```sh
+Authentication Report
+============================================
+# date time acct host term exe success event
+============================================
+1. 12/07/2014 22:03:19 root 118.70.182.1 ssh /usr/sbin/sshd yes 14
+2. 12/07/2014 22:03:19 root 118.70.182.1 ssh /usr/sbin/sshd yes 17
+3. 12/07/2014 22:08:44 congtt 118.70.182.1 ssh /usr/sbin/sshd yes 50
+4. 12/07/2014 22:08:44 congtt 118.70.182.1 ssh /usr/sbin/sshd yes 53
+5. 12/07/2014 22:20:33 congtt 118.70.182.1 ssh /usr/sbin/sshd yes 84
+6. 12/07/2014 22:20:33 congtt 118.70.182.1 ssh /usr/sbin/sshd yes 87
+7. 12/08/2014 10:17:20 congtt 203.162.130.241 ssh /usr/sbin/sshd yes 181
+8. 12/08/2014 10:17:20 congtt 203.162.130.241 ssh /usr/sbin/sshd yes 184
+9. 12/08/2014 10:23:22 root ? pts/0 /bin/su yes 195
+10. 12/08/2014 11:44:34 congtt 203.162.130.241 ssh /usr/sbin/sshd yes 225
+11. 12/08/2014 11:44:34 congtt 203.162.130.241 ssh /usr/sbin/sshd yes 228
+
+```
