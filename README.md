@@ -6,5 +6,11 @@ Do đó mình tổng hợp các lệnh, tổ hợp lệnh để kiểm tra xem h
 pháp phòng tránh là gì !
 
 ### Cách 1: Sử dụng lệnh `aureport`
-
+- Thông tin về lệnh
+```sh
+whatis aureport
+aureport (8)         - a tool that produces summary reports of audit daemon logs
+```
+- Centos:  Lệnh này trong CentOS 6.6 có sẵn
+- Ubuntu: Trong Ubuntu cần cài đặt gói sau `sudo apt-get -y install auditd`
 
