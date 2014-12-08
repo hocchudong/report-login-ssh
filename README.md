@@ -13,9 +13,10 @@ aureport (8)         - a tool that produces summary reports of audit daemon logs
 ```
 - Centos:  Lệnh này trong CentOS 6.6 có sẵn
 - Ubuntu: Trong Ubuntu cần cài đặt gói sau `sudo apt-get -y install auditd` để có lệnh trên !
-- 
+
 #### Cách dùng cơ bản
 - Tổng hợp báo cáo về việc login thông qua ssh (Các báo cáo số liệu thổng quan: Số user đã login, số account, group ...)
+
 + Cú pháp lệnh: 
 ```sh
 root@congto:~# aureport
@@ -50,12 +51,13 @@ Number of events: 4
 ```
 
 - Tổng hợp tất cả các thông tin về việc login ssh (cả thành công và thất bại)
-Cú pháp lệnh:
+
++ Cú pháp lệnh:
 ```sh
 root@congto:~# aureport -au -i
 ```
 
-Kết quả: 
++ Kết quả: 
 ```sh
 ...
 32. 12/08/2014 17:56:51 congtt 203.162.130.241 ssh /usr/sbin/sshd yes 66
