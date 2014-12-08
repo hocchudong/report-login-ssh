@@ -130,3 +130,12 @@ total  auid
 15  congtt
 1  root
 ```
+
+### 2. Cách 2: Sử dụng các lệnh cat, tail, awk, grep ...
+
+```sh 
+Đang tìm và viết
+```
+
+### 3. Tham khảo
+[1]. http://www.golinuxhub.com/2014/05/how-to-track-all-successful-and-failed.html
