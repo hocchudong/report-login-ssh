@@ -5,8 +5,8 @@ Kiểm tra tình trạng SSH
 Do đó mình tổng hợp các lệnh, tổ hợp lệnh để kiểm tra xem hệ thống của bạn đã bị những IP nào dò quét, để từ đó xem xét phương 
 pháp phòng tránh là gì !
 
-### Cách 1: Sử dụng lệnh `aureport`
-####Thông tin về lệnh
+### 1. Cách 1: Sử dụng lệnh `aureport`
+#### 1.1. Thông tin về lệnh
 ```sh
 root@congto:~# whatis aureport
 aureport (8)         - a tool that produces summary reports of audit daemon logs
@@ -14,8 +14,9 @@ aureport (8)         - a tool that produces summary reports of audit daemon logs
 - Centos:  Lệnh này trong CentOS 6.6 có sẵn
 - Ubuntu: Trong Ubuntu cần cài đặt gói sau `sudo apt-get -y install auditd` để có lệnh trên !
 
-#### Cách dùng cơ bản
-- Tổng hợp báo cáo về việc login thông qua ssh (Các báo cáo số liệu thổng quan: Số user đã login, số account, group ...)
+#### 1.2. Cách dùng cơ bản
+##### 1.2.1. Tổng hợp báo cáo về việc login thông qua ssh 
+- Các báo cáo số liệu thổng quan: Số user đã login, số account, group ...
 
 + Cú pháp lệnh: 
 ```sh
@@ -50,7 +51,8 @@ Number of events: 4
 
 ```
 
-- Tổng hợp tất cả các thông tin về việc login ssh (cả thành công và thất bại)
+##### 1.2.2. Tổng hợp tất cả các thông tin về việc login ssh 
+- Bao gồm cả thành công và thất bại
 
 + Cú pháp lệnh:
 ```sh
