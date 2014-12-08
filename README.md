@@ -99,3 +99,29 @@ Authentication Report
 11. 12/08/2014 11:44:34 congtt 203.162.130.241 ssh /usr/sbin/sshd yes 228
 
 ```
+
+##### 1.2.4. Thống kê các phiên login thất bại
+- Cú pháp lệnh 
+```sh
+root@congto:~# aureport -au -i --failed
+```
+
+- Kết quả
+```sh
+Authentication Report
+============================================
+# date time acct host term exe success event
+============================================
+1. 12/07/2014 22:20:28 congtt 118.70.182.1 ssh /usr/sbin/sshd no 82
+2. 12/07/2014 22:20:28 congtt 118.70.182.1 ssh /usr/sbin/sshd no 83
+3. 12/08/2014 10:40:52 ? 203.162.130.241 ssh /usr/sbin/sshd no 204
+4. 12/08/2014 10:40:52 (invalid user) 203.162.130.241 ssh /usr/sbin/sshd no 205
+5. 12/08/2014 18:10:38 ? 203.162.130.241 ssh /usr/sbin/sshd no 114
+6. 12/08/2014 18:10:38 (invalid user) 203.162.130.241 ssh /usr/sbin/sshd no 115
+7. 12/08/2014 20:05:56 root 218.108.49.219 ssh /usr/sbin/sshd no 178
+8. 12/08/2014 20:05:56 root 218.108.49.219 ssh /usr/sbin/sshd no 179
+9. 12/08/2014 20:06:01 root 218.108.49.219 ssh /usr/sbin/sshd no 188
+10. 12/08/2014 20:06:01 root 218.108.49.219 ssh /usr/sbin/sshd no 189
+11. 12/08/2014 20:06:05 root 218.108.49.219 ssh /usr/sbin/sshd no 198
+12. 12/08/2014 20:06:05 root 218.108.49.219 ssh /usr/sbin/sshd no 199
+```
