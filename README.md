@@ -140,12 +140,17 @@ total  auid
 ```
 
 ### 2. Cách 2: Sử dụng các lệnh cat, tail, awk, grep ...
+#### 2.1. Kiểm tra log trong Linux
+- Đối với Ubuntu, file log của SSH được lưu tại /var/log/secure. Do đó sử dụng lệnh cat, more, tail, less ...ta có thể xem được các thông tin về login trước đó.
+##### 2.1.1. Kiểm tra các phiên SSH thất bại
+```sh
+ cat /var/log/secure | grep "Invalid user" | awk '{print $8}'
+```
 
+
+### B.Phòng tránh như thế nào 
 ```sh 
 Đang tìm và viết
 ```
-
-### B.Phòng tránh như thế nào 
-
 ### C. Tham khảo
 [1]. http://www.golinuxhub.com/2014/05/how-to-track-all-successful-and-failed.html
